@@ -35,22 +35,31 @@ def main(argv):
             nome_evento = event['summary']
             if 'MR' in nome_evento:
                 # Manutenção Russo
-                values.append([event['summary'], 90])
+                values.append([event['summary'], 100])
             if 'MB' in nome_evento:
                 # Manutenção Brasileiro
-                values.append([event['summary'], 70])
+                values.append([event['summary'], 80])
             if 'AR' in nome_evento:
                 # Aplicação Russo
-                values.append([event['summary'], 150])
+                values.append([event['summary'], 170])
             if 'AB' in nome_evento:
                 # Aplicação Brasileiro
-                values.append([event['summary'], 120])
+                values.append([event['summary'], 140])
             if 'SO' in nome_evento:
                 # Sobrancelha
                 values.append([event['summary'], 20])
-            if 'PT' in nome_evento:
-                # Penteado na Taina
-                values.append([event['summary'], 84])
+            if 'AG' in nome_evento:
+                # Aplicação Glow
+                values.append([event['summary'], 190])
+            if 'MG' in nome_evento:
+                # Manutenção Glow
+                values.append([event['summary'], 110])
+            if 'AL' in nome_evento:
+                # Aplicação Light
+                values.append([event['summary'], 150])
+            if 'SO' in nome_evento:
+                # Manutenção Light
+                values.append([event['summary'], 90])
 
         body = {
             'values': values
